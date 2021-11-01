@@ -1,0 +1,130 @@
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 17px;
+  font-weight: 400;
+  background-color: rgb(193, 135, 240);
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: -40px;
+  margin-top: -30px;
+  list-style: none;
+}
+
+.gallery__item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 27px;
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.stats-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.photo-card {
+  width: 350px;
+  height: 250px;
+}
+
+.img-item {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  box-shadow: 0px 4px 7px 2px rgba(83, 4, 129, 0.7);
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.input-field {
+  display: block;
+  margin-right: 15px;
+  padding: 8px;
+  width: 300px;
+  border: 2px solid rgb(62, 0, 104);
+  border-radius: 8px;
+  background-color: rgb(228, 220, 233);
+}
+
+.button-src {
+  font-weight: 500;
+  display: block;
+  width: 100px;
+  height: 37px;
+  background-color: rgb(156, 10, 253);
+  color: rgb(228, 220, 233);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: rgb(55, 3, 90);
+    font-weight: 700;
+  }
+}
+
+.load-more-btn {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 37px;
+  padding: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  background-color: rgb(156, 10, 253);
+  color: rgb(228, 220, 233);
+  border-radius: 4px;
+  border: none;
+
+  &:hover,
+  &:focus {
+    background-color: rgb(55, 3, 90);
+  }
+}
+
+.is-hidden {
+  display: none;
+}
+
+@keyframes spin {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
+}
+
+.spin {
+  background-color: rgb(121, 70, 155);
+  cursor: auto;
+}
+
+.for-observe {
+  height: 5px;
+}
